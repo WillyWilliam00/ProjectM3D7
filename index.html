@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Netflix Clone</title>
+</head>
+
+<body style="background-color: lightgray;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- NAVIGATION BAR-->
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/Netflix_Logo_RGB.png" alt="" width="100px"> <!-- netflix img in css larghezza-->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">KIDS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-bell-fill"></i>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <img src="assets/imgs/avatar.png" width="50px" alt=""> <!-- avatar img in css larghezza-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mx-5 align-items-center d-flex justify-content-between"> <!-- FIRST H2-->
+        <div class="d-flex align-items-center">
+            <h2>TV Shows</h2>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    Genres
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Adventure</a>
+                    <a class="dropdown-item" href="#">Horror </a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <i class="bi bi-text-left"></i>
+            <i class="bi bi-grid-fill"></i>
+        </div>
+
+    </div>
+
+    <section class="mx-5">
+        <h3>Trending now</h3>
+        <div id="carouselExampleControls" class="carousel slide overflow-visible" data-ride="carousel" data-interval="false" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row mx-0">
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/1.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/2.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/3.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/4.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/6.png" alt=""></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/7.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/8.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/9.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/10.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/11.png" alt=""></div>
+                    <div class="col-2 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
+                </div>
+              </div>
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
