@@ -1,30 +1,35 @@
-.carousel-item img {
-    width: 100%; 
-    z-index: 0;
-    padding: 0 3px;
-    transition: scale 0.3s ease-in-out;
+
+@font-face {
+	font-family: 'NetflixSansLight';
+	src: url('assets/fonts/NetflixSans-Light.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
-.carousel-item img:hover {
-    
-    scale: 1.2;
-    z-index: 1;
-    position: relative;
+@font-face {
+	font-family: 'NetflixSansRegular';
+	src: url('assets/fonts/NetflixSans-Regular.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-.carousel-inner {
-    overflow: visible !important;
-}   
+@font-face {
+	font-family: 'NetflixSansMedium';
+	src: url('assets/fonts/NetflixSans-Medium.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'NetflixSansBold';
+	src: url('assets/fonts/NetflixSans-Bold.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* MEDIA QUERY PER NAV BAR  100% RESPONSIVE */
 
- #d-flex-mobile {
-        display: flex;
-        flex-direction: row;
-    }
-    
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* L'ICONA USER DIVENTA 100% RESPONSIVE E FUORI DAL BURGER MENU E SEMPRE A DX, IL BURGER MENU RIMANE FUNZIONANTE*/
     #d-flex-mobile {
         position: absolute;
         top: 0;
@@ -32,85 +37,175 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    
-   .navbar-nav .dropdown-menu {
-        position: absolute !important;
-        float: none;
+@media screen and (max-width: 992px) { /* DROPDOWN ICONA USER  */
+    .navbar-nav .dropdown-menu {
+        position: absolute !important; 
     }
 }
-
-@media screen and (max-width: 401px) {
     
+@media screen and (max-width: 401px) { 
     nav {
          justify-content: center !important;
      }
+}
     
+    
+/* ANIMAZIONE DI INGRESSO*/  
+
+.background_black {  /*SFONDO NERO */
+        background-color: black;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        inset: 0;
+        animation: overlay-fade 2s ease-in 2.1s alternate forwards; 
+        place-items: center;
+        display: grid;
+    
+}
      
+.img-overlay{  /* OVERLAY LOGO NETFLIX*/
+        position: fixed;
+        inset: 0;
+        place-items: center;
+        display: grid;
+        overflow: hidden;
+        animation: img-fade 5s ease-in  1s  alternate forwards;
+}
+    
+.img-overlay img {
+        width: 200px; 
+}
+    
+.img-dissolvenza {  /*COMPARSA E SCOMPARSA LOGO NETFLIX*/
+        background-color: black;
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        right: -165px;
+        top: 50px;
+        animation: img-dissolvenza 2.5s ease-in alternate forwards;
+        rotate: 61deg;
 }
 
- /* INTRO */
+@media screen and (max-width: 992px) {  /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU TABLET*/
+        .img-dissolvenza {
+            animation: img-dissolvenza 3.2s ease-in alternate forwards;
+        }
+}
+        
+@media screen and (max-width: 450px) { /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU MOBILE*/
+        .img-dissolvenza {
+            animation: img-dissolvenza 3.3s ease-in alternate forwards;
+        }
+}
+
+@keyframes img-dissolvenza { /*ANIMAZIONE COMPARSA E SCOMPARSA LOGO NETFLIX*/
+        
+        0% {
+            scale: 10;
+        }
+        40% {
+            scale: 1;            
+        }
+        100% {
+            scale: 10;           
+        }
+}
+    
+@keyframes img-fade { /* ANIMAZIONE OVERLAY LOGO NETFLIX*/
+        
+        0% {
+            scale: 1; 
+        }
+        100% {
+            scale: 50;
+        }
+    
+}
+    
+    
+    
+@keyframes overlay-fade { /* ANIMAZIONE SFONDO NERO SFONDO NERO */ 
+        from {
+            opacity: 1; 
+        }
+        to {
+            opacity: 0;
+           z-index: 0;
+        }
+}
+
+
+h2 {
+	margin-right: 2em;
+}
+#bg-black {
+    background-color: black;
+}
+ 
+.nav-link {
+    transition: scale 0.2s ease-in-out;
+}
+
+#bg-black .nav-link:hover {
+    color: white;
+    scale: 1.05;
+}
+
+#bg-black .btn {
+	background-color: black;
+	border: solid 1px rgba(255,255,255,.5);
+}
+
+#bg-black .btn:focus {
+	box-shadow: unset;
+}
+
+#mr-after::after {
+	margin-left: 1.4em;
+}
+
+.carousel-item img { 
+    width: 100%; 
+    z-index: 0;
+    padding: 0 3px;
+    transition: scale 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+    
+    scale: 1.1;
+    z-index: 1;
+    position: relative;
+}
+
+section .carousel-inner {
+    overflow: visible ;
+}   
+
+section .carousel-control-prev, section .carousel-control-next {
+    width: 5%; 
+}
+
+section {
+	margin-top: 30px;
+}
+
+.bi .bi-text-left {
+	border: 1px solid white;
+}
+
+#d-flex-mobile {
+    display: flex;
+    flex-direction: row;
+}
+
+/* FOOTER */
 
 footer [type=button]  {
     border: 2px solid white;
     border-radius: unset;
- }
- 
-
- .overlay {
-    background-color: black;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    inset: 0;
-   animation: overlay-fade 2s ease-in-out 4s  alternate forwards; 
-    place-items: center;
-    display: grid;
-
- }
-
- 
-
- .img-overlay{
-    
-    z-index: 3;
-    position: fixed;
-    inset: 0;
-    place-items: center;
-    display: grid;
-    overflow: hidden;
-    animation: img-fade 3s ease-in-out 1s  alternate forwards;
- }
- .img-overlay img {
-    width: 200px;
-   
-    
- }
-
- @keyframes img-fade {
-    from {
-
-        scale: 1;
-        
-    }
-    to {
-        scale: 100;
-        opacity: 0;
-        z-index: 2;
-        
-    }
 }
 
-@keyframes overlay-fade {
-    from {
-        opacity: 1;
-        z-index: 2;
-        
-    }
-    to {
-        opacity: 0;
-        z-index: 0;
-        
-    }
-}
