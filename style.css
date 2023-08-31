@@ -33,7 +33,7 @@
     #d-flex-mobile {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 15px;
     }
 }
 
@@ -54,24 +54,22 @@
 
 .background_black {  /*SFONDO NERO */
         background-color: black;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
+        z-index: 3;
         position: fixed;
         inset: 0;
-        animation: overlay-fade 2s ease-in 2.1s alternate forwards; 
+        animation: overlay-fade 2s ease-in 2.1s      forwards; 
         place-items: center;
         display: grid;
     
 }
-     
+   
 .img-overlay{  /* OVERLAY LOGO NETFLIX*/
         position: fixed;
         inset: 0;
         place-items: center;
         display: grid;
         overflow: hidden;
-        animation: img-fade 5s ease-in  1s  alternate forwards;
+        animation: img-fade 5s ease-in  1s       forwards;
 }
     
 .img-overlay img {
@@ -85,19 +83,19 @@
         position: absolute;
         right: -165px;
         top: 50px;
-        animation: img-dissolvenza 2.5s ease-in alternate forwards;
+        animation: img-dissolvenza 2.5s ease-in      forwards;
         rotate: 61deg;
 }
 
 @media screen and (max-width: 992px) {  /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU TABLET*/
         .img-dissolvenza {
-            animation: img-dissolvenza 3.2s ease-in alternate forwards;
+            animation: img-dissolvenza 3.2s ease-in      forwards;
         }
 }
         
 @media screen and (max-width: 450px) { /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU MOBILE*/
         .img-dissolvenza {
-            animation: img-dissolvenza 3.3s ease-in alternate forwards;
+            animation: img-dissolvenza 3.3s ease-in      forwards;
         }
 }
 
@@ -163,19 +161,24 @@ h2 {
 	box-shadow: unset;
 }
 
+#bg-black nav {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+}
+
 #mr-after::after {
 	margin-left: 1.4em;
 }
 
 .carousel-item img { 
     width: 100%; 
-    z-index: 0;
-    padding: 0 3px;
-    transition: scale 0.3s ease-in-out;
+    padding: 0 3.5px;
+    transition: scale 0.2s ease-in-out;
 }
 
 .carousel-item img:hover {
-    
     scale: 1.1;
     z-index: 1;
     position: relative;
@@ -202,10 +205,43 @@ section {
     flex-direction: row;
 }
 
+.margin-for-nav {
+
+    margin-top: 15vh;
+}
+
+.br-cp {
+    border: 1px solid rgba(255,255,255,.5);;
+    padding-inline: 15px;
+    cursor: pointer;
+    color: rgba(255,255,255,.5);
+}
+
+@media screen and (max-width: 790px) { /* MEDIA QUERY PER RENDERE 100% RESP l'H2 E LE ICON SOPRA IL CAROSELLO*/
+    h2 {
+        margin-right: 10px;
+        font-size: 20px !important;
+    }
+    .margin-for-nav {
+
+        margin-top: 18vh;
+    }
+}
+
 /* FOOTER */
 
+footer {
+    margin-top: 200px;
+    font-size: 0.7em;
+    color: rgba(255,255,255,.5);
+}
+footer .col-3 span{
+    cursor: pointer;
+}
 footer [type=button]  {
     border: 2px solid white;
     border-radius: unset;
+    color: rgba(255,255,255,.5);
+    font-size: 1em;
 }
 

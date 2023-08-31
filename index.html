@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark"> <!-- NAVIGATION BAR-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark"> <!-- NAVIGATION BAR-->
     <a class="navbar-brand" href="#">
 
       <img src="assets/imgs/Netflix_Logo_RGB.png" alt="" width="100px"> <!-- netflix img in css larghezza-->
@@ -85,8 +85,9 @@
 
     </div>
   </nav>
-  <div class="row mx-5 ">
-    <div class="col d-flex align-items-center">
+  <div class="margin-for-nav">
+    <div class="row mx-5">
+      <div class="col-12 justify-content-center col-sm-6 justify-content-sm-start d-flex align-items-center">
         <h2>TV Shows</h2>
         <div class="dropdown">
           <a class="btn btn dropdown-toggle rounded-0 text-white" id="mr-after" href="#" role="button"
@@ -100,163 +101,166 @@
           </div>
         </div>
       </div>
-      <div class="col d-flex align-items-center justify-content-end">
-        <i class="bi bi-text-left"></i>
-        <i class="bi bi-grid-fill"></i>
+      <div class="col-12 justify-content-center pt-3 col-sm-6 pt-sm-0 justify-content-sm-end d-flex align-items-center">
+        <div>
+         <i class="bi bi-text-left br-cp"></i>
+         <i class="bi bi-grid-fill br-cp"></i>
+        </div>
       </div>
+    </div>
+
+
+    <section class="mx-5">
+      <h3>Trending now</h3>
+      <div id="TrendingNow" class="carousel slide overflow-visible mt-3" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row mx-0">
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/1.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/2.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/3.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/4.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/6.png" alt=""></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row mx-0">
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/7.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/8.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/9.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/10.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/11.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#TrendingNow" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#TrendingNow" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <section class="mx-5">
+      <h3>Watch It Again</h3>
+      <div id="WatchItAgain" class="carousel slide overflow-visible mt-3" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row mx-0">
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/13.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/14.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/15.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/16.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/17.png" alt=""></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row mx-0">
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/1.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/2.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/3.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/4.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/6.png" alt=""></div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#WatchItAgain" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#WatchItAgain" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-5">
+      <h3>New Releases</h3>
+      <div id="NewReleases" class="carousel slide overflow-visible mt-3" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row mx-0">
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/7.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/8.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/9.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/10.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/11.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row mx-0">
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/13.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/14.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/15.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/16.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/17.png" alt=""></div>
+              <div class="col-6 col-md-4 col-xl-2 p-0 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#NewReleases" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#NewReleases" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <div class="row my-2 text-center ">
+          <div class=" col-6 col-sm-3"><span>Audio and Subtitles</span></div>
+          <div class=" col-6 col-sm-3"><span>Audio Description</span></div>
+          <div class=" col-6 col-sm-3"><span>Help Center</span></div>
+          <div class=" col-6 col-sm-3"><span>Gift Cards</span></div>
+        </div>
+        <div class="row my-2 text-center">
+          <div class=" col-6 col-sm-3"><span>Media Center</span></div>
+          <div class=" col-6 col-sm-3"><span>Investor Relations</span></div>
+          <div class=" col-6 col-sm-3"><span>Jobs</span></div>
+          <div class=" col-6 col-sm-3"><span>Terms of Use</span></div>
+        </div>
+        <div class="row my-2 text-center">
+
+          <div class=" col-6 col-sm-3"><span>Privacy</span></div>
+          <div class=" col-6 col-sm-3"><span>Legal Notices</span></div>
+          <div class=" col-6 col-sm-3"><span>Cookie Preferences</span></div>
+          <div class=" col-6 col-sm-3"><span>Corporate Information</span></div>
+
+        </div>
+        <div class="row my-2 text-center">
+          <div class="col-6 col-sm-3">Contact Us</div>
+        </div>
+        <div class="row my-4 text-center">
+          <div class="col-6 col-sm-3">
+            <button type="button" class="btn btn-outline-dark">Service Code</button>
+          </div>
+        </div>
+        <div class="row my-2 text-center">
+          <div class="col-6 col-sm-3"><span>1997-2019 Netflix, Inc.</span></div>
+        </div>
+
+
+
+      </div>
+
+
+    </footer>
   </div>
-  
-
-  <section class="mx-5">
-    <h3>Trending now</h3>
-    <div id="TrendingNow" class="carousel slide overflow-visible mt-3" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row mx-0">
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/1.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/2.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/3.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/4.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/6.png" alt=""></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row mx-0">
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/7.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/8.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/9.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/10.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/11.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-      <a class="carousel-control-prev" href="#TrendingNow" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#TrendingNow" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section>
-  <section class="mx-5">
-    <h3>Watch It Again</h3>
-    <div id="WatchItAgain" class="carousel slide overflow-visible mt-3" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row mx-0">
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/13.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/14.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/15.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/16.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/17.png" alt=""></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row mx-0">
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/1.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/2.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/3.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/4.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/6.png" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-      <a class="carousel-control-prev" href="#WatchItAgain" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#WatchItAgain" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="mx-5">
-    <h3>New Releases</h3>
-    <div id="NewReleases" class="carousel slide overflow-visible mt-3" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row mx-0">
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/7.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/8.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/9.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/10.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/11.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0"><img src="assets/imgs/movies/12.png" alt=""></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row mx-0">
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/13.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/14.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/15.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/16.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/17.png" alt=""></div>
-            <div class="col-6 col-md-4 col-lg-2 p-0 p-0"><img src="assets/imgs/movies/5.png" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-      <a class="carousel-control-prev" href="#NewReleases" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#NewReleases" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section>
-  <footer style="margin-top: 600px;">
-    <div class="container">
-      <div class="row my-2">
-        <div class="col-3">Audio and Subtitles</div>
-        <div class="col-3">Audio Description</div>
-        <div class="col-3">Help Center</div>
-        <div class="col-3">Gift Cards</div>
-      </div>
-      <div class="row my-2">
-        <div class="col-3">Media Center</div>
-        <div class="col-3">Investor Relations</div>
-        <div class="col-3">Jobs</div>
-        <div class="col-3">Terms of Use</div>
-      </div>
-      <div class="row my-2">
-
-        <div class="col-3">Privacy</div>
-        <div class="col-3">Legal Notices</div>
-        <div class="col-3">Cookie Preferences</div>
-        <div class="col-3">Corporate Information</div>
-
-      </div>
-      <div class="row my-2">
-        <div class="col-3">Contact Us</div>
-      </div>
-      <div class="row my-4">
-        <div class="col-3">
-          <button type="button" class="btn btn-outline-dark">Service Code</button>
-        </div>
-      </div>
-      <div class="row my-2">
-        <div class="col-3">1997-2019 Netflix, Inc.</div>
-      </div>
-
-
-
-    </div>
-
-
-  </footer>
-
 
 
 
