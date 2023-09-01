@@ -1,4 +1,4 @@
-
+/* NETFLIX FONT */
 @font-face {
 	font-family: 'NetflixSansLight';
 	src: url('assets/fonts/NetflixSans-Light.otf') format('truetype');
@@ -38,6 +38,7 @@ h2 {
 h3 {
     font-family: NetflixSansMedium;
 }
+/* NETFLIX FONT */
 
 /* ANIMAZIONE DI INGRESSO*/  
 
@@ -101,9 +102,7 @@ h3 {
         }
     
 }
-    
-    
-    
+
 @keyframes overlay-fade { /* ANIMAZIONE SFONDO NERO SFONDO NERO */ 
         from {
             opacity: 1; 
@@ -118,7 +117,8 @@ h3 {
 
 /* MEDIA QUERY PER NAV BAR  100% RESPONSIVE */
 
-@media screen and (min-width: 992px) { /* L'ICONA AVATAR DIVENTA 100% RESPONSIVE E FUORI DAL BURGER MENU, SEMPRE A DX A QUALSIASI LARGHEZZA, IL BURGER MENU RIMANE FUNZIONANTE*/
+@media screen and (min-width: 992px) { /* L'ICONA AVATAR DIVENTA 100% RESPONSIVE E FUORI DAL BURGER MENU, 
+                                        SEMPRE A DX A QUALSIASI LARGHEZZA, IL BURGER MENU RIMANE FUNZIONANTE*/
     #bg-black #d-flex-mobile {
         position: absolute;
         top: 0;
@@ -132,7 +132,9 @@ h3 {
     }
 }
     
-@media screen and (max-width: 400px) {   /* navbar in centro, logo netflix e img avatar più piccole in caso di larghezze inferiori a 400px*/
+@media screen and (max-width: 400px) {          /* navbar in centro in caso di larghezze inferiori a 400px, 
+                                                 logo netflix, img avatar e testo dei bottoni 
+                                                 più piccoli in caso di larghezze inferiori a 400px*/
     #bg-black nav {
          justify-content: center;
      }
