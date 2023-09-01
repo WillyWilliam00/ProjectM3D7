@@ -142,16 +142,19 @@ h3 {
     #bg-black .img_logo_netflix {
         width: 70px;
     }
+    #bg-black .btn {
+        font-size: 10px;
+    }
 }
 
-@media screen and (max-width: 815px) { /* testi più piccoli con larghezze inferiori a 790px*/
+@media screen and (max-width: 815px) { /* testi più piccoli con larghezze inferiori a 815px*/
     #bg-black h2 {
         margin-right: 15px;
-        font-size: 18px;
+        font-size: 25px;
         margin-block-end: 0;
     }
     #bg-black h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
     
 }
@@ -313,6 +316,11 @@ footer i {
     cursor: pointer;
 }
 
+@media screen and (max-width: 450px) {
+    footer a {
+        font-size: 12px ;
+    }
+}
 /* FOOTER */
 
 /*
