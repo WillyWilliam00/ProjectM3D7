@@ -49,6 +49,7 @@ h3 {
         animation: overlay-fade 2s ease-in 2.1s      forwards; 
         place-items: center;
         display: grid;
+        
     
 }
    
@@ -300,11 +301,16 @@ footer i {
 footer a:hover {
     color: white;
     text-decoration: underline;
+        
 }
 
 #bg-black footer [type=button]:hover  {
     background-color: white;
     color: black;
+}
+
+footer i {
+    cursor: pointer;
 }
 
 /* FOOTER */
