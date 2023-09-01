@@ -27,29 +27,18 @@
 	font-style: normal;
 }
 
-/* MEDIA QUERY PER NAV BAR  100% RESPONSIVE */
-
-@media screen and (min-width: 992px) { /* L'ICONA USER DIVENTA 100% RESPONSIVE E FUORI DAL BURGER MENU E SEMPRE A DX, IL BURGER MENU RIMANE FUNZIONANTE*/
-    #d-flex-mobile {
-        position: absolute;
-        top: 0;
-        right: 15px;
-    }
+* {
+    font-family: NetflixSansLight;
 }
 
-@media screen and (max-width: 992px) { /* DROPDOWN ICONA USER  */
-    .navbar-nav .dropdown-menu {
-        position: absolute !important; 
-    }
+h2 {
+    font-family: NetflixSansBold;
 }
-    
-@media screen and (max-width: 401px) { 
-    nav {
-         justify-content: center !important;
-     }
+
+h3 {
+    font-family: NetflixSansMedium;
 }
-    
-    
+
 /* ANIMAZIONE DI INGRESSO*/  
 
 .background_black {  /*SFONDO NERO */
@@ -87,17 +76,6 @@
         rotate: 61deg;
 }
 
-@media screen and (max-width: 992px) {  /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU TABLET*/
-        .img-dissolvenza {
-            animation: img-dissolvenza 3.2s ease-in      forwards;
-        }
-}
-        
-@media screen and (max-width: 450px) { /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU MOBILE*/
-        .img-dissolvenza {
-            animation: img-dissolvenza 3.3s ease-in      forwards;
-        }
-}
 
 @keyframes img-dissolvenza { /*ANIMAZIONE COMPARSA E SCOMPARSA LOGO NETFLIX*/
         
@@ -135,6 +113,81 @@
         }
 }
 
+/* ANIMAZIONE DI INGRESSO*/  
+
+/* MEDIA QUERY PER NAV BAR  100% RESPONSIVE */
+
+@media screen and (min-width: 992px) { /* L'ICONA AVATAR DIVENTA 100% RESPONSIVE E FUORI DAL BURGER MENU, SEMPRE A DX A QUALSIASI LARGHEZZA, IL BURGER MENU RIMANE FUNZIONANTE*/
+    #bg-black #d-flex-mobile {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) { /* DROPDOWN ICONA USER  */
+    #bg-black .navbar-nav .dropdown-menu {
+        position: absolute; 
+    }
+}
+    
+@media screen and (max-width: 400px) {   /* navbar in centro, logo netflix e img avatar più piccole in caso di larghezze inferiori a 400px*/
+    #bg-black nav {
+         justify-content: center;
+     }
+     #bg-black .img_avatar {
+        width: 30px;
+    }
+    #bg-black .img_logo_netflix {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 815px) { /* testi più piccoli con larghezze inferiori a 790px*/
+    #bg-black h2 {
+        margin-right: 15px;
+        font-size: 18px;
+        margin-block-end: 0;
+    }
+    #bg-black h3 {
+        font-size: 15px;
+    }
+    
+}
+/* MEDIA QUERY PER NAV BAR  100% RESPONSIVE */
+
+/*
+/*
+/* 
+
+/* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO NETFLIX IN FASE DI ANIMAZIONE*/
+
+@media screen and (max-width: 992px) {  /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU TABLET*/
+    .img-dissolvenza {
+        animation: img-dissolvenza 3.2s ease-in      forwards;
+    }
+}
+    
+@media screen and (max-width: 450px) { /* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO SU MOBILE*/
+    .img-dissolvenza {
+        animation: img-dissolvenza 3.4s ease-in      forwards;
+    }
+
+}
+
+/* MEDIA QUERY PER RENDERE 100% RESP L'OVERLAY DEL LOGO NETFLIX IN FASE DI ANIMAZIONE*/
+
+/*
+/*
+/**/
+
+
+.img_avatar {
+    width: 50px;
+ }
+.img_logo_netflix {
+    width: 100px;
+}
 
 h2 {
 	margin-right: 2em;
@@ -161,11 +214,9 @@ h2 {
 	box-shadow: unset;
 }
 
-#bg-black nav {
-    position: fixed;
-    top: 0;
-    background-color: black;
+ #bg-black .sticky-top { /* funzione sticky bootstrap, modificato lo z index, in modo che durante l'animazione non compaia la navbar*/
     z-index: 2;
+    background-color: black;
 }
 
 #mr-after::after {
@@ -205,10 +256,6 @@ section {
     flex-direction: row;
 }
 
-.margin-for-nav {
-
-    margin-top: 15vh;
-}
 
 .br-cp {
     border: 1px solid rgba(255,255,255,.5);;
@@ -217,21 +264,14 @@ section {
     color: rgba(255,255,255,.5);
 }
 
-@media screen and (max-width: 790px) { /* MEDIA QUERY PER RENDERE 100% RESP l'H2 E LE ICON SOPRA IL CAROSELLO*/
-    h2 {
-        margin-right: 10px;
-        font-size: 20px !important;
-    }
-    .margin-for-nav {
-
-        margin-top: 18vh;
-    }
-}
+/*
+/*
+/* 
 
 /* FOOTER */
 
 footer {
-    margin-top: 200px;
+    margin-top: 150px;
     font-size: 0.7em;
     color: rgba(255,255,255,.5);
 }
@@ -244,4 +284,10 @@ footer [type=button]  {
     color: rgba(255,255,255,.5);
     font-size: 1em;
 }
+
+/* FOOTER */
+
+/*
+/*
+/*
 
